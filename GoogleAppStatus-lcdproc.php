@@ -6,12 +6,12 @@ define(COL_2, 8);				//Width of the second column ("Issue?") Don't touch this.
 define(DATE_FMT, 'r');			//Output format used for date() functions Don't touch this.
 define(DATE_FMT_SHORT, 'n/j G:i');	//Output format used for date() functions Don't touch this.
 define(TZ, 'America/Phoenix');	//Timezone to print all times in
-define(LCDDHOST, '192.168.1.215');	//LCDd host to connect to
+define(LCDDHOST, '');	//LCDd host to connect to
 define(LCDDPORT, '13666');		//LCDd port to connect on
 define(CACHE_EXPIRE, 300);	//Default is to expire data after 5 minutes
 define(CACHE_FILE, '/tmp/GoogleAppStatus.cache');	//Don't touch this
 define(GOOGLE_DATAURL, "http://www.google.com/appsstatus/json/en");	//Don't douch this.
-define(DEBUG, 3);	// 1: Generic Debug Messages, INFO
+define(DEBUG, 0);	// 1: Generic Debug Messages, INFO
 					// 2: Protocol-level debug messages
 					// 3: Protocol-level debug with verbose messages
 
@@ -33,7 +33,6 @@ lcd_write('hello');
 lcd_write('client_set name "GoogleAppsStatus"');
 // Menu stuff
 lcd_write($basemenu);
-//lcd_write('menu_set_main ""');
 // Screen stuff
 lcd_write('screen_add GoogleAppsStatusIssues');
 lcd_write('widget_add GoogleAppsStatusIssues _titleBar title');
