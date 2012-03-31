@@ -1,0 +1,5 @@
+Retrieve and display the data from Google's /appstatus page.
+
+Currently there is a standalone script and an LCDproc client.
+
+Check file headers for file-specific documentation.
